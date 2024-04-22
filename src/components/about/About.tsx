@@ -1,5 +1,5 @@
 import "./About.scss";
-import aboutBanner from "../../assets/peiture.jpg";
+import aboutBanner from "../../assets/peinture.jpg";
 
 export const About: React.FC =() => {
     return(
