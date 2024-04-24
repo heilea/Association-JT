@@ -14,10 +14,9 @@ export const HomePage: React.FC = () => {
 
     return (
      <div className="HomePage">
-         <div className="tilte-padding">
+        
             <h1>Squad</h1>  
-            
-         </div>
+         
          <div className="cards-container">
                 {panini.map((panini:CardPlayer) =>(
                     <div className="card_player">
