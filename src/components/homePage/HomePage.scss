@@ -1,81 +1,76 @@
-.HomePage{
-    font-family: "Montserrat", sans-serif;
+$prussian-blue: #032F44ff;
+$lemon-chiffon: #F9F3CCff;
+$bright-pink-crayola: #F75964ff;
+$moonstone: #25A5B1ff;
+$pumpkin: #F0782Eff;
+
+.HomePage {
+  font-family: "Montserrat", sans-serif;
   min-height: 67vh;
   width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0;
+  color: $lemon-chiffon;
+}
 
-  .mainBanner {
+.cards-container {
+  
+  border-radius: 25px;
+  width: 69vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2vw;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  gap: 8%;
+  background-color: $bright-pink-crayola;
+
+
+  .card_player {
     position: relative;
-    height: 25vh;
-    width: 70%;
+    width: 19vw;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
     overflow: hidden;
-    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
+     
+
+
 
     img {
       position: absolute;
-      width: 100%;
-      object-fit: cover;
-      filter: brightness(0.7);
+      height: 100%;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 82%);
+      z-index: 1;
     }
-
-    h1 {
-      position: absolute;
-      color: white;
-      font-size: 2vw;
-    }
-  }
-
-  .cards-container{
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    width: 66vw;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2vw;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
-
-    a {
-      width: 19vw;
-      margin: 1.5vw;
+    img:hover {
+      transform: scale(1.2); /* Agrandit l'image de 20% au survol */
+      z-index: 1;
       
-      .card {
-        position: relative;
-        width: 19vw;
-        aspect-ratio: 1/1;
-        border-radius: 10px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-        img {
-          position: absolute;
-          height: 100%;
-        }
-
-        h2 {
-          position: absolute;
-          margin: 0;
-          padding: 5%;
-          padding-top: 20%;
-          z-index: 1;
-          width: 90%;
-          color: white;
-          font-size: 1vw;
-          bottom: 0;
-          background-image: linear-gradient(to bottom, transparent, #1616169f);
-        }
-      }
-    }
   }
 
+    h2 {
+      position: absolute;
+      margin: 0;
+      padding: 5%;
+      z-index: 1;
+      width: 90%;
+      text-align: center;
+      font-family: "Jersey 10", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: xx-large;
+      bottom: 0;
+      border-radius: 12px;
+      background-color: $prussian-blue;
+    }
+  }
 }

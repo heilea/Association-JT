@@ -1,65 +1,79 @@
-body {
-    width: 89vw;
-    margin: 0 auto;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-  
-  
-      header {
-        margin: 0;
-        padding: 0;
-        width: 70%;
-        height: 13vh;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-  
-        img {
-          height: 100%;
-        }
-  
-        nav {
-          width: 17%;
-          display: flex;
-          align-items: center;
-          flex-direction: row;
-          justify-content: space-between;
-  
-          a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.2vw;
-          }
-  
-          .active-link {
-            font-weight: 600 ;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-          }
-        }
-      }
-  
-      footer {
-        margin: 0;
-        padding: 0;
-        height: 20vh;
-        width: 100%;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
+$prussian-blue: #032F44ff;
+$lemon-chiffon: #F9F3CCff;
+$bright-pink-crayola: #F75964ff;
+$moonstone: #25A5B1ff;
+$pumpkin: #F0782Eff;
 
-        img {
-            height: 60%;
-        }
-        p {
-          color: white;
-          font-size: 1.3vw;
-        }
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: $prussian-blue;
+
+
+  header {
+    margin: 0;
+    padding: 0;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      height: 100%;
+    }
+
+    nav {
+      width: 17%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        color: $lemon-chiffon;
+        font-size: 1.2vw;
+      }
+
+      .active {
+        background-color: $bright-pink-crayola;
+        padding: 5%;
+        border-radius: 12px;
+       
       }
     }
-  
+  }
+
+  footer {
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    img {
+      height: 60%;
+      background-color: transparent;
+      mix-blend-mode: screen;
+    }
+
+    p {
+      color: white;
+      font-size: 1.3vw;
+    }
+  }
+}
